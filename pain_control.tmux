@@ -36,10 +36,10 @@ pane_resizing_bindings() {
 }
 
 pane_split_bindings() {
-	tmux bind-key h split-window -h -c "#{pane_current_path}" \\\; swap-pane -U
-	tmux bind-key j split-window -v -c "#{pane_current_path}"
-	tmux bind-key k split-window -v -c "#{pane_current_path}" \\\; swap-pane -U
-	tmux bind-key l split-window -h -c "#{pane_current_path}"
+	tmux bind-key C-h split-window -h -c "#{pane_current_path}" \; swap-pane -U
+	tmux bind-key C-j split-window -v -c "#{pane_current_path}"
+	tmux bind-key C-k split-window -v -c "#{pane_current_path}" \; swap-pane -U
+	tmux bind-key C-l split-window -h -c "#{pane_current_path}"
 
 	tmux bind-key "|" split-window -h -c "#{pane_current_path}"
 	tmux bind-key "-" split-window -v -c "#{pane_current_path}"
