@@ -16,10 +16,10 @@ get_tmux_option() {
 }
 
 pane_navigation_bindings() {
-	tmux bind-key -r h select-pane -L
-	tmux bind-key -r j select-pane -D
-	tmux bind-key -r k select-pane -U
-	tmux bind-key -r l select-pane -R
+	tmux bind-key h select-pane -L
+	tmux bind-key j select-pane -D
+	tmux bind-key k select-pane -U
+	tmux bind-key l select-pane -R
 }
 
 window_move_bindings() {
