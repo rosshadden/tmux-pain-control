@@ -46,7 +46,9 @@ pane_split_bindings() {
 	tmux bind-key C-l split-window -h -c "#{pane_current_path}"
 
 	tmux bind-key "|" split-window -h -c "#{pane_current_path}"
+	tmux bind-key "\\" split-window -fh -c "#{pane_current_path}"
 	tmux bind-key "-" split-window -v -c "#{pane_current_path}"
+	tmux bind-key "_" split-window -fv -c "#{pane_current_path}"
 	tmux bind-key "%" split-window -h -c "#{pane_current_path}"
 	tmux bind-key '"' split-window -v -c "#{pane_current_path}"
 }
